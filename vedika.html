@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="panel" id="panel1">
+            <h1>This is panel 1</h1>
+        </div>
+        <div data-role="panel" id="panel2">
+            <h1>This is panel 2</h1>
+        </div>
+        <div data-role="header">
+            <h1>Registration</h1>
+        </div>
+
+        <div data-role="content">
+            <form>
+                <div class="ui-field-contain">
+                    <label>First Name:</label>
+                    <input type="text" name="fname" id="fname" placeholder="Frist Name" value="">
+                    <label>Last Name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" value="">
+                    
+                    
+                    <div data-role="fieldcontent2">
+                        <label for="slider">Age:</label>
+                        <input type="range" name="slider" id="slider" value="20" min="0" max="100">
+                    </div>
+                    
+                    <div data-role="fieldcontent3"></div>
+                    <label for="slider-flip-m">Placed:</label>
+                    <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true">
+                    <option value="off">No</option>
+                    <option value="on" selected="">Yes</option>
+                    </select>
+                    </div>
+
+                    <fieldset data-role="controlgroup">
+                        <legend>Intrested Domain :</legend>
+                        <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+                        <label for="checkbox-1a">Full stack development</label>
+                        <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+                        <label for="checkbox-2a">Andriod Development</label>
+                        <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+                        <label for="checkbox-3a">DevOps</label>
+                        <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+                        <label for="checkbox-4a">Blockchain</label>
+                    </fieldset>
+                </div>
+                <a href="#panel1" data-role="button" data-iconpos="notext">Panel1</a><br>
+                <a href="#panel2" data-role="button" data-iconpos="notext">Panel2</a><br>
+                <a href="#page2" data-role="button" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Submit</a>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Form submitted successfully</h1>
+        </div>
+
+        <div data-role="content">
+            <label>You want to fill form again</label>
+            <a href="#page1" data-role="button">YES</a>
+            <a href="#dialog-box" data-role="button" data-rel="dialog" data-transition="pop">No</a>
+        </div>
+
+        <div id="dialog-box" data-role="popup">
+            <a href="#dialog-box" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup</a>
+            <div data-role="popup" id="popupBasic">
+                <p>Thank you for information</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
