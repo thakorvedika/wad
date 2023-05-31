@@ -1,0 +1,31 @@
+.slideimg{
+    width:100%;
+    height:500px;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+#nationalHeader,#internationalHeader{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+#international,#national{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+        background-image: linear-gradient(to right,white,#AEE2FF);
+    
+}
+.internationalBooking,.nationalBooking{
+    padding-left: 20px;
+}
+
+
